@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Website</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #fafafa; }
+    header { background: #b22222; color: white; padding: 20px; text-align: center; }
+    nav { background: #d32f2f; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+
+    .hero { background: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0') center/cover; height: 300px; display: flex; justify-content: center; align-items: center; color: white; font-size: 2rem; font-weight: bold; text-shadow: 2px 2px 5px black; }
+
+    .section { padding: 30px; width: 85%; margin: auto; }
+
+    .menu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    .card img { width: 100%; height: 150px; border-radius: 10px; object-fit: cover; }
+    .price { color: #b22222; font-weight: bold; }
+
+    .booking-box { background: rgb(235, 221, 221); padding: 20px; border-radius: 10px; box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+    input, select, button { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+    button { background: #b22222; color: white; font-weight: bold; border: none; cursor: pointer; }
+    button:hover { background: #8b1a1a; }
+
+    .photos-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+    .photos-grid img { width: 100%; height: 150px; border-radius: 10px; object-fit: cover; }
+
+    .rating { color: #ff9800; font-size: 1.2rem; }
+
+    footer { background: #b22222; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Delicious Bites Restaurant</h1>
+</header>
+
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#photos">Photos</a>
+    <a href="#ratings">Ratings</a>
+    <a href="#booking">Book Table</a>
+</nav>
+
+<div class="hero">Fine Dining • Great Taste • Cozy Atmosphere</div>
+
+<!-- MENU SECTION -->
+<section class="section" id="menu">
+<h2>Our Menu</h2>
+<div class="menu-grid">
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="Pizza">
+        <h3>Italian Pizza</h3>
+        <p class="price">Rs. 399</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" alt="Burger">
+        <h3>Cheese Burger</h3>
+        <p class="price">Rs. 259</p>
+    </div>
+
+    <div class="card">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe" alt="Pasta">
+        <h3>Classic Pasta</h3>
+        <p class="price">Rs. 229</p>
+    </div>
+</div>
+</section>
+
+<!-- PHOTOS SECTION -->
+<section class="section" id="photos">
+<h2>Restaurant Photos</h2>
+<div class="photos-grid">
+    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1" alt="Photo 1">
+    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Photo 2">
+    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9" alt="Photo 3">
+    
+</div>
+</section>
+
+<!-- RATINGS SECTION -->
+<section class="section" id="ratings">
+<h2>Customer Ratings</h2>
+<p><span class="rating">★★★★★</span> "Amazing food and great service!"</p>
+<p><span class="rating">★★★★☆</span> "Lovely place, cozy atmosphere."</p>
+<p><span class="rating">★★★★★</span> "Best pasta I've had in years!"</p>
+</section>
+
+<!-- BOOKING SECTION -->
+<section class="section" id="booking">
+<h2>Book a Table</h2>
+<div class="booking-box">
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email" required>
+        <select required>
+            <option value="">Number of Seats</option>
+            <option>1</option>
+            <option>2</option>
+            <option>4</option>
+            <option>6</option>
+            <option>10</option>
+        </select>
+        <input type="date" required>
+        <input type="time" required>
+        <button>Confirm Booking</button>
+    </form>
+</div>
+</section>
+
+<footer>
+&copy; 2025 Delicious Bites. All Rights Reserved.
+</footer>
+
+</body>
+</html>
